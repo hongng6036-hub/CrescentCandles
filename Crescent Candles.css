@@ -1,0 +1,214 @@
+/* The animation code */
+@keyframes colorchange {
+    from {background-color: pink;}
+    to {background-color: lavender;}
+  }
+  
+  /* The element to apply the animation to */
+  .container {
+    background-color: palepink;
+    animation-name: colorchange;
+    animation-duration: 10s;
+  }
+
+header {
+    background-image: url(CrescentCitySunset.png);
+    background-size: cover;
+    background-position:  center center;
+    background-repeat: no-repeat;
+    back
+	position: relative;
+	top: 10;
+    bottom: 10;
+	left: 0;
+	z-index: 100;
+    width: 740px;
+    height: 330px;
+    float: center;
+    margin: 0 auto;
+    border-top: 5px dotted black;
+    border-right: 5px dotted black;
+	border-bottom: 5px dotted black;
+    border-left: 5px dotted black;
+}
+
+.header-img {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 5;
+  width: 100px;
+  height: auto;
+  float: left;
+}
+
+
+.header-search {
+    float: center; 
+    width: 200px;
+}
+
+
+body {
+    background-image: url(CrescentCitySunset_LeftLogo.png);
+    background-size: cover;
+    background-position:  top center;
+    background-repeat: no-repeat;
+	position: static;
+    overflow: scroll;
+	top: 10;
+	left: 0;
+	z-index: 100;
+    height: auto;
+}
+
+footer {
+	position: relative;
+    float: center;
+	top: 0;
+	left: 0;
+	z-index: 100;
+    width: 740px;
+	height: auto;
+    margin: 0 auto;
+    border-top: 4px dotted black;
+    border-right: 4px dotted black;
+	border-bottom: 4px dotted black;
+    border-left: 4px dotted black;
+}
+
+h1{  
+    text-align: center;
+    width: auto;
+}
+
+h3 {
+    text-align: center;
+}
+
+.google-font-text-Jost {
+    font-family: 'Jost', sans-serif;
+}
+
+.google-font-text-PlayfairDisplay {
+    font-family: 'Playfair Display', serif;
+}
+
+p {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    text-align: center;
+    width: auto;
+    overflow: scroll; 
+
+ }
+
+.AboutUsContent {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    text-align: justify;
+    width: auto;
+    overflow: scroll; 
+}
+
+.Locations {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    text-align: Left;
+}
+
+.ContactIcon {
+    float: left;
+}
+ 
+
+/*=====CSS for Dropdown Menus=====*/ 
+ul {
+   list-style-type: none; 
+   margin: 0; 
+   padding: 5px; 
+   overflow: hidden; 
+   background-color: #eebdc0; 
+   font-size: 20px;
+   font-family: 'Jost', sans-serif;
+   border: 2px solid #eebdc0;
+   opacity: 80%;
+   }
+
+li.LogoNav { 
+    float: left; 
+    padding: 1px;
+    overflow: hidden; 
+    opacity: 100%;
+    } 
+
+li.leftnav { 
+   float: left; 
+   font-size: 20px;
+   padding: 5px;
+   } 
+
+
+   li.rightnav {
+    float: right; 
+    font-size: 20px;
+    padding: 5px;
+ }
+ 
+
+li a, .dropbtn { 
+   display: inline-block; 
+   color: black;
+   text-align: center; 
+   padding: 14px 16px; 
+   text-decoration: none; 
+   font-family: 'Jost', sans-serif;
+   } 
+
+li a:hover, .dropdown:hover .dropbtn { 
+   background-color: #c49fc1; 
+   } 
+   
+li.dropdown { 
+   display: inline-block;
+   padding: 5px;
+   } 
+   
+.dropdown-content { 
+   display: none; 
+   position: absolute; 
+   background-color: #e5baa0; 
+   min-width: 160px; 
+   box-shadow: 0px 8px 16px 0px rgba(240,204,183); 
+   font-family: 'Jost', sans-serif;
+   } 
+   
+.dropdown-content a { 
+   color: black; 
+   padding: 12px 16px; 
+   text-decoration: none; 
+   display: block; 
+   text-align: left; 
+   font-family: 'Jost', sans-serif;
+   } 
+   
+.dropdown-content a:hover {
+   background-color: #c49fc1
+   } 
+
+.dropdown:hover .dropdown-content { 
+   display: block;
+}
+
+	
+@media only screen and (max-width: 767px) { /*Make the text green on small devices*/
+    .mytext{
+        color: green;
+    }
+}
+ 
+@media only screen and (min-width: 768px) { /*Make the text red on large devices*/
+    .mytext{
+        color: red;
+    }
+}
